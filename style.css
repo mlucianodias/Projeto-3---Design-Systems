@@ -1,0 +1,15 @@
+body {
+    font-size: 30px;
+}
+
+@media (min-width: 320px) {
+    .title {
+        color: red
+    }
+}
+
+@media (min-width: 720px) {
+    .title {
+        color: blueviolet
+    }
+}
