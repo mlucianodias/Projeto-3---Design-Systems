@@ -736,6 +736,7 @@ input[type=checkbox] {
 
     header {
         height: 52px;
+        width: 320px;
     }
 
     .navbar {
@@ -745,7 +746,7 @@ input[type=checkbox] {
     
     .logo {
         width: 52px;
-        margin-left: 150px;
+        margin-left: 120px;
     }
 
     .search {
