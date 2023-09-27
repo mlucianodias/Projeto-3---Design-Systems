@@ -199,7 +199,7 @@ header {
 .img {
     width: 190px;
     height: 165px;
-    padding: 16px 35px;
+    padding: 16px 35px; border: 1px solid goldenrod;
 }
 
 .cons_img {
@@ -727,7 +727,7 @@ input[type=checkbox] {
 }
 
   /* Estilos para tablet e dispositivos móveis */
-@media  screen and (max-width: 600px) {
+@media  screen and (max-width: 768px) {
     * {
         margin: 0;
         padding: 0;
@@ -736,7 +736,6 @@ input[type=checkbox] {
 
     header {
         height: 52px;
-        width: 320px;
     }
 
     .navbar {
@@ -746,7 +745,7 @@ input[type=checkbox] {
     
     .logo {
         width: 52px;
-        margin-left: 120px;
+        margin-left: 140px;
     }
 
     .search {
@@ -807,7 +806,7 @@ input[type=checkbox] {
 
     /* Seção Projetos de alta complexidade */
     .projetos {
-        width: 290px;
+        width: 355px;
         height: 308px;
         margin-top: 15px;
         margin-left: 15px;
@@ -820,14 +819,9 @@ input[type=checkbox] {
     .title-projetos {
         margin-top: 20px;
         margin-left: 15px;
-        position: absolute;
-        font-family: var(--alt-font);
         font-size: 24px;
-        font-style: normal;
-        font-weight: 800;
         width: 260px;
         height: 58px;
-        line-height: 120%;
         border: 1px solid goldenrod;
     }
 
@@ -835,17 +829,13 @@ input[type=checkbox] {
         padding-top: 1px;
         margin-top: 86px; 
         margin-left: 15px;
-        position: absolute;
         font-size: 14px;
         width: 201px;
         height: 100px;
-        font-weight: 700;
-        font-family: open sans;
-        line-height: 140%;
         border: 1px solid goldenrod;
     }
     .img_projeto {
-        width: 290px;
+        width: 355px;
         height: 308px;
         padding: 0;
         margin-left: 0;
@@ -855,39 +845,25 @@ input[type=checkbox] {
     .botao-calculo {
         width: 174px;
         height: 44px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        background-color: var(--button);
-        border: 8px solid var(--button);
-        border-radius: 12px;
-        padding: 10px;
-        cursor: pointer;
         margin-top: 24px;
     }
     
     .botao-calculo-texto {
         font-family: var(--alt-font);
         font-size: 14px;
-        font-weight: 700;
-        color: var(--white);
     }
 
     /* Seção Sobre nós */
     .title {
         font-family: var(--alt-font);
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 400;
-        margin-left: 75px;
-        padding-top: 50px;
-        line-height: 125%; /* 60px */
+        font-size: 32px;
+        margin-left: 15px;
+        padding-top: 15px;
     }
 
     .sobre, .vantagens {
         background-color: var(--sobre-vantagens);
-        margin-top: 60px;
+        margin-top: 24px;
     }
 
     .sobre {
@@ -895,132 +871,115 @@ input[type=checkbox] {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 50px 75px;
+        padding: 15px 15px;
     }
 
     .title1 {
         font-family: var(--alt-font);
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 125%; /* 60px */
+        font-size: 32px;      border: 1px solid rgb(32, 218, 178);
+
     }
     .sobre-texto {
-        width: 850px;
-        font-family: open sans;
+        width: 355px;
         font-size: 18px;
-        font-weight: 400;
-        font-style: normal;
-        margin-top: 19px;
+        margin-top: 17px;
+        border: 1px solid goldenrod;
     }
 
     .consultoria, .arquiteto {
-        width: 850px;
-        height: 245px;
+        width: 355px;
+        height: 268px;
         display: flex;
-        padding: 40px 60px;
-        border-radius: 32px;
-        border: 1px solid var(--border-sobre);
-        margin-top: 33px;
-        background: var(--white);
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 15px 15px; border: 1px solid goldenrod;
     }
 
     .container_item {
         display: flex;
-        width: 720px;
+        flex-direction: column;
+        width: 325px;
+        height: 238px;
+        border: 1px solid goldenrod;
     }
 
     .img {
-        width: 190px;
-        height: 165px;
-        padding: 16px 35px;
+        width: 58px;
+        height: 64px;
+        margin-left: 15px;
+        padding: 0px;
+        border: 1px solid goldenrod;
     }
 
     .cons_img {
-        width: 119px;
-        height: 132px;
+        width: 58px;
+        height: 64px;
     }
 
     .arq_img {
-        width: 190px;
+        width: 106px;
     }
 
     .sobre_texto {
-        width: 480px;
-        height: 135px;
-        margin-left: 50px;
+        width: 260px;
+        height: 100px;
+        margin-left: 15px;
+        margin-top: 16px;
+        border: 1px solid goldenrod;
     }
 
     h3 {
-        font-size: 24px;
-        font-family: open sans;
-        font-weight: 700;
+        font-size: 14px;
+        width: 260px;
+        height: 50px;
     }
 
     .arq_texto, .cons_texto {
-        display: flex;
-        width: 450px;
-        height: 92px;
-        font-size: 17px;
-        font-weight: 400;
-        font-family: open sans;
-        line-height: 180%;
+        width: 260px;
+        height: 100px;
+        font-size: 14px;
         margin-top: 6px;
+        border: 3px solid rgb(218, 32, 63);
     }
 
     .mais {
+        width: 290px;
+        height: 380px;
         margin-top: 70px;
+        border: 3px solid rgb(218, 32, 63);
     }
 
     .container_mais {
-        width: 868px;
-        height: 245px;
-        position: absolute;
-        padding: 72px 50px 77px;
-        background-color: var(--white);
-        border-radius: 32px;
-        margin-top: 513px;
-        border: 1px solid var(--border-sobre);
+        width: 290px;
+        height: 225px;
+        margin-top: 153px;
+        border: 5px solid var(--border-sobre);
     }
 
     .mais_img {
-        width: 868px;
-        height: 680px;
-        flex-shrink: 0;
-
-        border-radius: 32px;
+        width: 290px;
+        height: 200px;
     }
 
     .mais_texto {
-        position: absolute;
-        font-family: open sans;
-        line-height: 180%;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 700;
-        width: 478px;
-        height: 96px;
+        font-size: 14px;
+        width: 255px;
+        height: 100px;
+        border: 1px solid var(--border-sobre);
     } 
 
     .mais_item {
         display: flex;
-        width: 768px;
-        height: 96px;
-        align-items: center;
+        width: 260px;
+        height: 168px;
+        flex-direction: column;
+        border: 5px solid var(--border-sobre);
     }
 
     .botao-mais {
-        width: 106px;
-        height: 58px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        background-color: var(--white);
-        border: 1px solid var(--button);
-        border-radius: 8px;
+        width: 260px;
+        height: 44px;
         cursor: pointer;
-        margin-left: 660px;
     }
     
     .botao-mais-texto {
@@ -1114,7 +1073,9 @@ input[type=checkbox] {
 
 
         .cards {
-            display: grid;
+            width: 290px;
+            height: 255px;
+            /* display: flex;
             grid-template-columns: 25% 25% 25%;
             grid-template-rows: 0.5fr 0.5fr 0.5fr;
             grid-template-areas: 
@@ -1122,7 +1083,7 @@ input[type=checkbox] {
             "locais aviao aviao check"
             "destinos destinos destinos check"
             ;
-            gap: 24px;
+            gap: 24px; */
         }
         .cards {
             background-color: var(--sobre-vantagens);
@@ -1145,9 +1106,11 @@ input[type=checkbox] {
     } 
 
     .cards__item p {
+        width: 204px;
+        height: 255px;
         display: flex;
         font-family: open sans;
-        font-size: 17px;
+        font-size: 14px;
         font-weight: 400;
         font-style: normal;
         line-height: 180%;
