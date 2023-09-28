@@ -199,7 +199,7 @@ header {
 .img {
     width: 190px;
     height: 165px;
-    padding: 16px 35px; border: 1px solid goldenrod;
+    padding: 16px 35px;
 }
 
 .cons_img {
@@ -403,6 +403,7 @@ h3 {
     align-items: flex-start;
     padding: 40px;
     border-radius: 32px;
+    border: 1px solid var(--border-sobre);
 }
 
 .cards__item img {
@@ -735,6 +736,7 @@ input[type=checkbox] {
     }
 
     header {
+        width: 320px;
         height: 52px;
     }
 
@@ -745,7 +747,7 @@ input[type=checkbox] {
     
     .logo {
         width: 52px;
-        margin-left: 140px;
+        margin-left: 125px;
     }
 
     .search {
@@ -806,14 +808,13 @@ input[type=checkbox] {
 
     /* Seção Projetos de alta complexidade */
     .projetos {
-        width: 355px;
+        width: 348px;
         height: 308px;
         margin-top: 15px;
         margin-left: 15px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        border: 1px solid goldenrod;
     }
     
     .title-projetos {
@@ -822,7 +823,6 @@ input[type=checkbox] {
         font-size: 24px;
         width: 260px;
         height: 58px;
-        border: 1px solid goldenrod;
     }
 
     .projetos__item__texto {
@@ -832,10 +832,9 @@ input[type=checkbox] {
         font-size: 14px;
         width: 201px;
         height: 100px;
-        border: 1px solid goldenrod;
     }
     .img_projeto {
-        width: 355px;
+        width: 290px;
         height: 308px;
         padding: 0;
         margin-left: 0;
@@ -856,9 +855,10 @@ input[type=checkbox] {
     /* Seção Sobre nós */
     .title {
         font-family: var(--alt-font);
+        width: 159px;
         font-size: 32px;
         margin-left: 15px;
-        padding-top: 15px;
+        padding-top: 15px; border: 1px solid rgb(32, 218, 178);
     }
 
     .sobre, .vantagens {
@@ -867,40 +867,49 @@ input[type=checkbox] {
     }
 
     .sobre {
-        width: 100%;
+        width: 320px;
+        height: 1430px;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         padding: 15px 15px;
     }
 
     .title1 {
         font-family: var(--alt-font);
-        font-size: 32px;      border: 1px solid rgb(32, 218, 178);
+        font-size: 32px;
 
     }
     .sobre-texto {
-        width: 355px;
-        font-size: 18px;
-        margin-top: 17px;
-        border: 1px solid goldenrod;
+        width: 290px;
+        font-size: 14px;
+        line-height: 180%; /* 25.2px */
+        letter-spacing: 0.14px;
+        margin-top: 0px;
+    }
+
+    .consultoria {
+        margin-top: 400px;
+    }
+
+    .arquiteto {
+        margin-top: 16px;
     }
 
     .consultoria, .arquiteto {
-        width: 355px;
+        width: 290px;
         height: 268px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 15px 15px; border: 1px solid goldenrod;
+        padding: 15px 15px;
     }
 
     .container_item {
         display: flex;
         flex-direction: column;
-        width: 325px;
+        width: 260px;
         height: 238px;
-        border: 1px solid goldenrod;
     }
 
     .img {
@@ -908,7 +917,6 @@ input[type=checkbox] {
         height: 64px;
         margin-left: 15px;
         padding: 0px;
-        border: 1px solid goldenrod;
     }
 
     .cons_img {
@@ -921,39 +929,39 @@ input[type=checkbox] {
     }
 
     .sobre_texto {
-        width: 260px;
-        height: 100px;
-        margin-left: 15px;
+        margin-left: 0;
         margin-top: 16px;
-        border: 1px solid goldenrod;
+    }
+    .sobre_texto h3{
+        width: 260px;
+        height: 50px;
     }
 
     h3 {
         font-size: 14px;
-        width: 260px;
-        height: 50px;
+        padding-top: 16px;
+        width: 290px;
     }
 
     .arq_texto, .cons_texto {
         width: 260px;
         height: 100px;
         font-size: 14px;
-        margin-top: 6px;
-        border: 3px solid rgb(218, 32, 63);
     }
 
     .mais {
         width: 290px;
         height: 380px;
-        margin-top: 70px;
-        border: 3px solid rgb(218, 32, 63);
+        margin-top: 450px;
+        position: absolute;
     }
 
     .container_mais {
         width: 290px;
         height: 225px;
         margin-top: 153px;
-        border: 5px solid var(--border-sobre);
+        padding: 16px 15px;
+        border: 1px solid var(--border-sobre);
     }
 
     .mais_img {
@@ -963,23 +971,23 @@ input[type=checkbox] {
 
     .mais_texto {
         font-size: 14px;
-        width: 255px;
+        width: 260px;
         height: 100px;
-        border: 1px solid var(--border-sobre);
-    } 
+    }
 
     .mais_item {
         display: flex;
-        width: 260px;
-        height: 168px;
         flex-direction: column;
-        border: 5px solid var(--border-sobre);
+        width: 260px;
+        height: 190px;
     }
 
     .botao-mais {
         width: 260px;
         height: 44px;
         cursor: pointer;
+        margin-top: 120px;
+        margin-left: 0px;   
     }
     
     .botao-mais-texto {
@@ -990,78 +998,62 @@ input[type=checkbox] {
     }
 
     /* Seção Como trabalhamos */
+    .trabalhamos {
+        width: 385px;
+        height: 775px;
+    }
+
+    br {
+        display: none;
+    }
+
     .container_como {
-        width: 758px;
+        width: 290px;
         height: 425px;
         display: flex;
-        margin-top: 39px;
-        margin-left: 75px;
+        margin-top: 26px;
+        margin-left: 15px;
     }
 
     .como_texto {
         width: 758px;
         height: 288px;
+        margin-top: 140px;
     }
 
     .texto_como {
-        display: flex;
-        width: 758px;
-        font-size: 18px;
-        font-weight: 400;
-        font-style: normal;
-        font-family: open sans;
+        width: 290px;
+        font-size: 14px;
         line-height: 180%;
-        margin-top: 6px;
+        letter-spacing: 0.14px;
+        margin-top: 0px;
     }
 
     .botao_1 {
-        width: 106px;
-        height: 58px;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        background-color: var(--button);
-        border: 8px solid var(--button);
-        border-radius: 12px;
+        width: 137px;
+        height: 44px;
         cursor: pointer;
-        margin-top: 35px;
-    }
-    
-    .botao-1-texto {
-        font-family: var(--alt-font);
-        font-size: 18px;
-        font-weight: 700;
-        color: var(--white);
+        margin-top: 16px;
+        margin-bottom: 16px;
     }
 
     .botao_2 {
-        width: 187px;
-        height: 56px;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        background-color: var(--white);
-        border: 1px solid var(--button);
-        border-radius: 12px;
-        margin-left: 40px;
+        width: 137px;
+        height: 44px;
+        margin-left: 8px;
         cursor: pointer;
-    }
-    
-    .botao-2-texto {
-        font-family: var(--alt-font);
-        font-size: 18px;
-        font-weight: 700;
-        color: var(--button);
     }
 
     .img_como {
-        width: 868px;
-        height: 427px;
-        margin-left: 144px;
+        width: 290px;
+        height: 140px;
+        margin-left: 0px;
+        position: absolute;
     }
     /* Seção Vantagens */
     .vantagens {
-        height: 743px;
+        width: 320px;
+        height: 1500px;
     }
         .globo {grid-area: globo }
         .prancheta {grid-area: prancheta }
@@ -1070,54 +1062,54 @@ input[type=checkbox] {
         .aviao {grid-area: aviao }
         .check {grid-area: check }
         .destinos {grid-area: destinos }
-
-
+        
         .cards {
-            width: 290px;
-            height: 255px;
-            /* display: flex;
-            grid-template-columns: 25% 25% 25%;
+            display: grid;
+            grid-template-columns: 290px;
             grid-template-rows: 0.5fr 0.5fr 0.5fr;
             grid-template-areas: 
-            "globo globo prancheta horario"
-            "locais aviao aviao check"
-            "destinos destinos destinos check"
+            "globo"
+            "prancheta"
+            "horario"
+            "locais"
+            "aviao"
+            "check"
+            "destinos"
             ;
-            gap: 24px; */
+            gap: 10px;
         }
         .cards {
+            width: 320px;
             background-color: var(--sobre-vantagens);
-            height: 650px;
-            padding: 50px 75px;
-    }
+            padding: 15px;
+        }
 
     .cards__item {
-        display: flex;
-        background-color: var(--white);
-        align-items: flex-start;
-        padding: 40px;
-        border-radius: 32px;
+        padding: 15px;
+        border-radius: 16px;
     }
 
     .cards__item img {
-        width: 64px;
-        height: 63px;
-        margin-right: 24px;
+        width: 39px;
+        height: 39px;
+        margin-right: 16px;
+        border: 1px solid var(--border-sobre);
     } 
 
     .cards__item p {
-        width: 204px;
-        height: 255px;
-        display: flex;
-        font-family: open sans;
+        width: 264px;
         font-size: 14px;
-        font-weight: 400;
-        font-style: normal;
         line-height: 180%;
         letter-spacing: 0.18px;
+        border: 1px solid var(--border-sobre);
     }
 
     /* Seção Serviços */
+    .servicos {
+        width: 320px;
+        height: 1920px;
+    }
+
         .servico1 {grid-area: servico1 }
         .servico2 {grid-area: servico2 }
         .servico3 {grid-area: servico3 }
@@ -1127,105 +1119,79 @@ input[type=checkbox] {
 
 
     .servicos_container {
-        width: 1760px;
-        height: 740px;
+        width: 290px;
         display: grid;
-        margin-left: 75px;
-        grid-template-columns: 33% 33% 33%;
+        margin-left: 15px;
+        grid-template-columns: 290px;
         grid-template-areas: 
-        "servico1 servico2 servico3"
-        "servico4 servico5 servico6";
+        "servico1"
+        "servico2"
+        "servico3"
+        "servico4"
+        "servico5"
+        "servico6"
+        ;        
         gap: 13px;
-        margin-top: 39px;
+        margin-top: 25px;
     }
 
     .servicos_container_item1 {
-        width: 573px;
-        height: 330px;
-        background-color: var(--white);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 5px;
-        border-radius: 8px;
-        background-color: var(--sobre-vantagens);
+        width: 290px;
+        height: 267px;
     }
 
     .servico_descricao1 {
-        width: 394px;
-        height: 64px;
-        display: flex;
-        font-family: Open Sans;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 25px;
-        letter-spacing: 0.16px;
-        margin-top: 11.5px;
+        width: 260px;
+        height: 50px;
+        font-size: 14px;
+        margin-top: 7px;
     }
 
     .servicos_container_item {
-        width: 573px;
-        height: 330px;
-        background-color: var(--white);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 5px;
-        border-radius: 8px;
-        background-color: var(--sobre-vantagens);
+        width: 290px;
+        height: 310px;
     }
 
     .servico_descricao {
-        width: 394px;
-        height: 96px;
-        display: flex;
-        font-family: Open Sans;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 25px;
-        letter-spacing: 0.16px;
-        margin-top: 11.5px;
+        width: 260px;
+        height: 100px;
+        font-size: 14px;
+        margin-top: 7px;
     }
 
     .container_servicos {
-        margin-top: 26px;
+        margin-top: 15px;
     }
-
+    
     .card__servico {
-        width: 483px;
-        height: 30px;
-        display: flex;
-        justify-content: space-between;
+        width: 260px;
+        height: 32px;
     }
 
     .img_servico {
-        width: 573px;
-        height: 165px;
+        width: 290px;
+        height: 148px;
         border-radius: 12px;
     }
 
     .servico {
-        font-family: Open Sans;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 31.2px;
-        letter-spacing: 0.24px;
+        width: 204px;
+        height: 25px;
+        font-size: 14px;
+        padding: 0;
         color: var(--button);
     }
 
     .arrow {
-        width: 30px;
-        height: 30px;
+        width: 32px;
+        height: 32px;
     }
 
     footer {
         background-color: var(--sobre-vantagens);
-        width: 100%;
+        width: 320px;
         height: 855px;
-        margin-top: 100px;
+        margin-top: 0px;
         border: 1px solid rgb(226, 7, 7);
     }
 
@@ -1235,13 +1201,14 @@ input[type=checkbox] {
         flex-direction: row;
         justify-content: space-between;
         display: flex;
-        padding: 0px 75px;
+        padding: 0px 15px;
     }
 
     .informacoes {
-        width: 180px;
-        height: 404px;
+        width: 140px;
+        height: 318px;
         margin-top: 50px;
+        border: 1px solid white;
     }
 
     .informacoes_logo {
