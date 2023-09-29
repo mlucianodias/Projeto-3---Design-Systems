@@ -621,7 +621,7 @@ input {
     font-size: 16px;
     border-radius: 16px;
     background-color: var(--formulario);
-    color: var(--white);
+    color: var(--enviar);
     padding: 24px;
     margin-bottom: 23px;
 }
@@ -633,7 +633,7 @@ input {
     font-weight: 400;
     line-height: 200%;
     letter-spacing: 0.16px;
-    color: var(--white);
+    color: var(--enviar);
 }
 
 select {
@@ -644,7 +644,7 @@ select {
     line-height: 200%;
     letter-spacing: 0.16px;
     background-color: var(--formulario);
-    color: var(--white); 
+    color: var(--enviar);
     width: 570px;
     height: 60px;
     margin-bottom: 23px;
@@ -1190,30 +1190,21 @@ input[type=checkbox] {
     footer {
         background-color: var(--sobre-vantagens);
         width: 320px;
-        height: 855px;
+        height: 1257px;
         margin-top: 0px;
-        border: 1px solid rgb(226, 7, 7);
     }
 
     .footer_item {
         background-color: var(--black);
-        height: 660px;
-        flex-direction: row;
-        justify-content: space-between;
-        display: flex;
+        width: 320px;
+        height: 1210px;
         padding: 0px 15px;
     }
 
     .informacoes {
         width: 140px;
         height: 318px;
-        margin-top: 50px;
-        border: 1px solid white;
-    }
-
-    .informacoes_logo {
-        width: 106px;
-        height: 58px;
+        margin-top: 855px;
     }
 
     .logo_footer {
@@ -1222,151 +1213,92 @@ input[type=checkbox] {
     }
 
     .institucional, .link {
-        width: 180px;
+        width: 144px;
         height: 182px;
-        margin-top: 24px;
-        font-family: var(--alt-font);
-        font-size: 17px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 38px;
-        color: var(--white);
-
-    }
-
-    .link1 {
-        color: var(--button);
-    }
-
-    ul {
-        list-style-type: none;
+        margin-top: 0px;
+        font-size: 14px;
     }
 
     .social-icones {
-        margin-top: 80px;
-        display: flex;
+        margin-top: 32px;
         gap: 24px;
-        width: 144px;
-        height: 60px;
+        width: 104px;
+        height: 40px;
     }
 
     .icone {
-        width: 60px;
-        height: 60px;
+        width: 40px;
+        height: 40px;
     }
 
     .enviar {
-        width: 570px;
-        height: 90%;
-        margin-top: 50px;
-        margin-left: 300px;
-        display: inline-flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 23px;
+        position: absolute;
+        width: 290px;
+        height: 432px;
+        margin-left: 0px;
+        margin-top: 15px;
     }
 
     .title_enviar {
-        width: 469px;
-        height: 60px;
-        font-family: var(--alt-font);
-        color: var(--white);
-        font-size: 47px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 125%;
+        width: 290px;
+        height: 76px;
+        font-size: 32px;
     }
 
     input {
-        width: 570px;
-        height: 60px;
-        border: none;
-        font-size: 16px;
-        border-radius: 16px;
-        background-color: var(--formulario);
-        color: var(--white);
-        padding: 24px;
-        margin-bottom: 23px;
+        width: 290px;
+        height: 52px;
+        font-size: 14px;
+        padding: 14px;
+        margin-bottom: 16px;
     }
 
     ::placeholder  {
-        font-family: Open Sans;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
+        font-size: 14px;
         line-height: 200%;
         letter-spacing: 0.16px;
-        color: var(--white);
     }
 
     select {
         font-family: Open Sans;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 200%;
-        letter-spacing: 0.16px;
-        background-color: var(--formulario);
-        color: var(--white); 
-        width: 570px;
-        height: 60px;
-        margin-bottom: 23px;
-        border-radius: 16px;
-        border: none;
-        padding-left: 24px;
+        font-size: 14px;
+        width: 290px;
+        height: 52px;
+        margin-bottom: 16px;
+        padding-left: 11px;
     }
 
     .botao-concluir {
-        width: 143px;
-        height: 58px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        background-color: var(--button);
-        border: none;
-        border-radius: 16px;
-        padding: 10px;
-        cursor: pointer;
+        width: 290px;
+        height: 44px;
+        margin-top: 48px;
+        border-radius: 8px;
+        padding: 10px 13px;
     }
     
     .botao-concluir-texto {
-        font-family: var(--alt-font);
-        font-size: 18px;
-        font-weight: 700;
+        font-size: 14px;
         color: var(--white);
     }
 
     .concluir {
-        width: 100%;
-        height: 58px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 32px;
+        width: 290px;
+        height: 92px;
+        flex-direction: column;
+        margin-top: 5px;
     }
 
     .choice {
-        width: 400px;
+        width: 290px;
         height: 32px;
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        position: absolute;
     }
 
     label {
-        width: 368px;
+        width: 260px;
         height: 32px;
-        flex-direction: row;
-        justify-content: space-between;
-        font-family: Open Sans;
-        font-size: 14px;
-        color: var(--white);
-        font-style: normal;
-        font-weight: 400;
-        line-height: 32px;
-        letter-spacing: 0.14px;
+        font-size: 12px;
     }
 
 
@@ -1374,19 +1306,14 @@ input[type=checkbox] {
         width: 24px;
         height: 24px;
         margin-right: 10px;
-        margin-top: 23px;
+        margin-top: 17px;
     }
 
     .texto_footer {
-        width: 519px;
-        height: 192px;
-        margin-top: 133px;
-        font-family: Open Sans;
-        font-size: 16px;
-        color: var(--white);
-        font-style: normal;
-        font-weight: 400;
-        line-height: 200%; /* 32px */
-        letter-spacing: 0.16px;
+        position: absolute;
+        width: 290px;
+        height: 250px;
+        margin-top: 573px;
+        font-size: 14px;
     }
 }
