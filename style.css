@@ -858,7 +858,6 @@ input[type=checkbox] {
         width: 159px;
         font-size: 32px;
         margin-left: 15px;
-        padding-top: 15px; border: 1px solid rgb(32, 218, 178);
     }
 
     .sobre, .vantagens {
@@ -1093,15 +1092,11 @@ input[type=checkbox] {
         width: 39px;
         height: 39px;
         margin-right: 16px;
-        border: 1px solid var(--border-sobre);
     } 
 
     .cards__item p {
         width: 264px;
         font-size: 14px;
-        line-height: 180%;
-        letter-spacing: 0.18px;
-        border: 1px solid var(--border-sobre);
     }
 
     /* Seção Serviços */
