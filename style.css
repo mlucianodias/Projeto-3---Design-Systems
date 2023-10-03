@@ -83,7 +83,7 @@ header {
 }
 
 /* Seção Projetos de alta complexidade */
-.title-projetos {
+.title-projects {
     margin-top: 150px; /*margem superior em relação á imagem*/
     margin-left: 155px; /*margem lateral em relação á imagem*/
     position: absolute;
@@ -94,7 +94,7 @@ header {
     width: 837px;
     height: 172px;
 }
-.projetos__item__texto {
+.projects__item__text {
     padding-top: 48px;
     margin-top: 296px; 
     margin-left: 155px;
@@ -106,7 +106,7 @@ header {
     font-family: open sans;
 }
 
-.botao-calculo {
+.button-calculation {
     width: 205px;
     height: 56px;
     display: flex;
@@ -121,24 +121,20 @@ header {
     margin-top: 64px;
   }
   
-  .botao-calculo-texto {
+  .button-calculation-text {
     font-family: var(--alt-font);
     font-size: 18px;
     font-weight: 700;
     color: var(--white);
 }
 
-.img_projeto {
+.img_project {
     max-width: 100%;
     object-fit: cover;
     object-position: bottom;
     margin-left: 75px;
     padding-top: 50px;
 }
-
-/* .img_mobile {
-    display: none;
-} */
 
 /* Seção Sobre nós */
 .title {
@@ -151,12 +147,12 @@ header {
     line-height: 125%; /* 60px */
 }
 
-.sobre, .vantagens {
+.about, .advantages {
     background-color: var(--sobre-vantagens);
     margin-top: 60px;
 }
 
-.sobre {
+.about {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -164,14 +160,14 @@ header {
     padding: 50px 75px;
 }
 
-.title1 {
+.title_about {
     font-family: var(--alt-font);
     font-size: 48px;
     font-style: normal;
     font-weight: 400;
     line-height: 125%; /* 60px */
 }
-.sobre-texto {
+.about-text {
     width: 850px;
     font-family: open sans;
     font-size: 18px;
@@ -180,7 +176,7 @@ header {
     margin-top: 19px;
 }
 
-.consultoria, .arquiteto {
+.consultancy, .architect {
     width: 850px;
     height: 245px;
     display: flex;
@@ -199,19 +195,21 @@ header {
 .img {
     width: 190px;
     height: 165px;
-    padding: 16px 35px;
+    
 }
 
-.cons_img {
+.consultancy_img {
     width: 119px;
     height: 132px;
+    margin-left: 50px;
+
 }
 
-.arq_img {
+.architect_img {
     width: 190px;
 }
 
-.sobre_texto {
+.about_text {
     width: 480px;
     height: 135px;
     margin-left: 50px;
@@ -223,7 +221,7 @@ h3 {
     font-weight: 700;
 }
 
-.arq_texto, .cons_texto {
+.architect_text, .consultancy_text {
     display: flex;
     width: 450px;
     height: 92px;
@@ -234,11 +232,11 @@ h3 {
     margin-top: 6px;
 }
 
-.mais {
+.more {
     margin-top: 70px;
 }
 
-.container_mais {
+.container_more {
     width: 868px;
     height: 245px;
     position: absolute;
@@ -249,15 +247,14 @@ h3 {
     border: 1px solid var(--border-sobre);
 }
 
-.mais_img {
+.more_img {
     width: 868px;
     height: 680px;
     flex-shrink: 0;
-
-    border-radius: 32px;
+    border-radius: px;
 }
 
-.mais_texto {
+.more_text {
     position: absolute;
     font-family: open sans;
     line-height: 180%;
@@ -268,14 +265,14 @@ h3 {
     height: 96px;
 } 
 
-.mais_item {
+.more_item {
     display: flex;
     width: 768px;
     height: 96px;
     align-items: center;
 }
 
-.botao-mais {
+.button-more {
     width: 106px;
     height: 58px;
     display: flex;
@@ -289,7 +286,7 @@ h3 {
     margin-left: 660px;
 }
   
-.botao-mais-texto {
+.button-more-text {
     font-family: var(--alt-font);
     font-size: 18px;
     font-weight: 700;
@@ -297,7 +294,7 @@ h3 {
 }
 
 /* Seção Como trabalhamos */
-.container_como {
+.container_how {
     width: 758px;
     height: 425px;
     display: flex;
@@ -305,12 +302,12 @@ h3 {
     margin-left: 75px;
 }
 
-.como_texto {
+.how_text {
     width: 758px;
     height: 288px;
 }
 
-.texto_como {
+.text_how {
     display: flex;
     width: 758px;
     font-size: 18px;
@@ -321,7 +318,7 @@ h3 {
     margin-top: 6px;
 }
 
-.botao_1 {
+.button_one {
     width: 106px;
     height: 58px;
     flex-direction: row;
@@ -334,14 +331,14 @@ h3 {
     margin-top: 35px;
 }
   
-.botao-1-texto {
+.button_one-text {
     font-family: var(--alt-font);
     font-size: 18px;
     font-weight: 700;
     color: var(--white);
 }
 
-.botao_2 {
+.button_two {
     width: 187px;
     height: 56px;
     flex-direction: row;
@@ -354,20 +351,20 @@ h3 {
     cursor: pointer;
 }
   
-.botao-2-texto {
+.button_two-text {
     font-family: var(--alt-font);
     font-size: 18px;
     font-weight: 700;
     color: var(--button);
 }
 
-.img_como {
+.img_how {
     width: 868px;
     height: 427px;
     margin-left: 144px;
 }
 /* Seção Vantagens */
-.vantagens {
+.advantages {
     height: 743px;
 }
 
@@ -389,13 +386,14 @@ h3 {
         "locais aviao aviao check"
         "destinos destinos destinos check"
         ;
-        gap: 24px;
+        gap: 24px ;
     }
     .cards {
         background-color: var(--sobre-vantagens);
         height: 650px;
         padding: 50px 75px;
     }
+
 
 .cards__item {
     display: flex;
@@ -431,7 +429,7 @@ h3 {
     .servico6 {grid-area: servico6 }
 
 
-.servicos_container {
+.services_container {
     width: 1760px;
     height: 740px;
     display: grid;
@@ -444,7 +442,7 @@ h3 {
     margin-top: 39px;
 }
 
-.servicos_container_item1 {
+.services_container_item1 {
     width: 573px;
     height: 330px;
     background-color: var(--white);
@@ -456,7 +454,7 @@ h3 {
     background-color: var(--sobre-vantagens);
 }
 
-.servico_descricao1 {
+.services_description_one {
     width: 394px;
     height: 64px;
     display: flex;
@@ -469,7 +467,7 @@ h3 {
     margin-top: 11.5px;
 }
 
-.servicos_container_item {
+.services_container_item {
     width: 573px;
     height: 330px;
     background-color: var(--white);
@@ -481,7 +479,7 @@ h3 {
     background-color: var(--sobre-vantagens);
 }
 
-.servico_descricao {
+.services_description {
     width: 394px;
     height: 96px;
     display: flex;
@@ -494,24 +492,25 @@ h3 {
     margin-top: 11.5px;
 }
 
-.container_servicos {
+.container_services {
     margin-top: 26px;
 }
 
-.card__servico {
+.card__services {
     width: 483px;
     height: 30px;
     display: flex;
     justify-content: space-between;
 }
 
-.img_servico {
+.img_services {
     width: 573px;
     height: 165px;
-    border-radius: 12px;
+    border-top-left-radius: 12px;
+    border-top-right-radius:  12px;
 }
 
-.servico {
+.service {
     font-family: Open Sans;
     font-size: 24px;
     font-style: normal;
@@ -542,13 +541,13 @@ footer {
     padding: 0px 75px;
 }
 
-.informacoes {
+.information {
     width: 180px;
     height: 404px;
     margin-top: 50px;
 }
 
-.informacoes_logo {
+.information_logo {
     width: 106px;
     height: 58px;
 }
@@ -558,7 +557,7 @@ footer {
     height: 58px;
 }
 
-.institucional, .link {
+.institutional, .link {
     width: 180px;
     height: 182px;
     margin-top: 24px;
@@ -579,7 +578,7 @@ ul {
     list-style-type: none;
 }
 
-.social-icones {
+.social-icon {
     margin-top: 80px;
     display: flex;
     gap: 24px;
@@ -587,12 +586,12 @@ ul {
     height: 60px;
 }
 
-.icone {
+.icon {
     width: 60px;
     height: 60px;
 }
 
-.enviar {
+.send {
     width: 570px;
     height: 90%;
     margin-top: 50px;
@@ -603,7 +602,7 @@ ul {
     gap: 23px;
 }
 
-.title_enviar {
+.title_send {
     width: 469px;
     height: 60px;
     font-family: var(--alt-font);
@@ -653,7 +652,7 @@ select {
     padding-left: 24px;
 }
 
-.botao-concluir {
+.button_conclude {
     width: 143px;
     height: 58px;
     display: flex;
@@ -667,14 +666,14 @@ select {
     cursor: pointer;
 }
   
-.botao-concluir-texto {
+.button_conclude_text {
     font-family: var(--alt-font);
     font-size: 18px;
     font-weight: 700;
     color: var(--white);
 }
 
-.concluir {
+.conclude {
     width: 100%;
     height: 58px;
     display: flex;
@@ -714,7 +713,7 @@ input[type=checkbox] {
     margin-top: 23px;
 }
 
-.texto_footer {
+.text_footer {
     width: 519px;
     height: 192px;
     margin-top: 133px;
@@ -809,14 +808,14 @@ input[type=checkbox] {
     }
 
     /* Seção Projetos de alta complexidade */
-    .projetos {
+    .projects {
         position:-ms-page;
         width: 320px;
         height: 308px;
         margin-top: 15px;
     }
     
-    .title-projetos {
+    .title-projects {
         margin-top: 20px;
         margin-left: 30px;
         font-size: 24px;
@@ -824,7 +823,7 @@ input[type=checkbox] {
         height: 58px;
     }
 
-    .projetos__item__texto {
+    .projects__item__text {
         padding-top: 1px;
         margin-top: 86px;
         font-size: 14px;
@@ -832,7 +831,7 @@ input[type=checkbox] {
         width: 201px;
         height: 100px;
     }
-    .img_projeto {
+    .img_project {
         width: 290px;
         height: 308px;
         padding: 0;
@@ -840,13 +839,13 @@ input[type=checkbox] {
         border-radius: 24px;
     }
 
-    .botao-calculo {
+    .button-calculation {
         width: 174px;
         height: 44px;
         margin-top: 24px;
     }
     
-    .botao-calculo-texto {
+    .button-calculation-text {
         font-family: var(--alt-font);
         font-size: 14px;
     }
@@ -859,12 +858,12 @@ input[type=checkbox] {
         margin-left: 15px;
     }
 
-    .sobre, .vantagens {
+    .about, .advantages {
         background-color: var(--sobre-vantagens);
         margin-top: 24px;
     }
 
-    .sobre {
+    .about {
         width: 320px;
         height: 1430px;
         display: flex;
@@ -873,12 +872,12 @@ input[type=checkbox] {
         padding: 15px 15px;
     }
 
-    .title1 {
+    .title_about {
         font-family: var(--alt-font);
         font-size: 32px;
 
     }
-    .sobre-texto {
+    .about-text {
         width: 290px;
         font-size: 14px;
         line-height: 180%; /* 25.2px */
@@ -886,15 +885,15 @@ input[type=checkbox] {
         margin-top: 0px;
     }
 
-    .consultoria {
+    .consultancy {
         margin-top: 400px;
     }
 
-    .arquiteto {
+    .architect {
         margin-top: 16px;
     }
 
-    .consultoria, .arquiteto {
+    .consultancy, .architect {
         width: 290px;
         height: 268px;
         display: flex;
@@ -917,20 +916,20 @@ input[type=checkbox] {
         padding: 0px;
     }
 
-    .cons_img {
+    .consultancy_img {
         width: 58px;
         height: 64px;
     }
 
-    .arq_img {
+    .architect_img {
         width: 106px;
     }
 
-    .sobre_texto {
+    .about_text {
         margin-left: 0;
         margin-top: 16px;
     }
-    .sobre_texto h3{
+    .about_text h3{
         width: 260px;
         height: 50px;
     }
@@ -941,20 +940,20 @@ input[type=checkbox] {
         width: 290px;
     }
 
-    .arq_texto, .cons_texto {
+    .architect_text, .consultancy_text {
         width: 260px;
         height: 100px;
         font-size: 14px;
     }
 
-    .mais {
+    .more {
         width: 290px;
         height: 380px;
         margin-top: 450px;
         position: absolute;
     }
 
-    .container_mais {
+    .container_more {
         width: 290px;
         height: 225px;
         margin-top: 153px;
@@ -962,25 +961,25 @@ input[type=checkbox] {
         border: 1px solid var(--border-sobre);
     }
 
-    .mais_img {
+    .more_img {
         width: 290px;
         height: 200px;
     }
 
-    .mais_texto {
+    .more_text {
         font-size: 14px;
         width: 260px;
         height: 100px;
     }
 
-    .mais_item {
+    .more_item {
         display: flex;
         flex-direction: column;
         width: 260px;
         height: 190px;
     }
 
-    .botao-mais {
+    .button-more {
         width: 260px;
         height: 44px;
         cursor: pointer;
@@ -988,7 +987,7 @@ input[type=checkbox] {
         margin-left: 0px;   
     }
     
-    .botao-mais-texto {
+    .button-more-text {
         font-family: var(--alt-font);
         font-size: 18px;
         font-weight: 700;
@@ -996,7 +995,7 @@ input[type=checkbox] {
     }
 
     /* Seção Como trabalhamos */
-    .trabalhamos {
+    .Work {
         width: 385px;
         height: 775px;
     }
@@ -1005,7 +1004,7 @@ input[type=checkbox] {
         display: none;
     }
 
-    .container_como {
+    .container_how {
         width: 290px;
         height: 425px;
         display: flex;
@@ -1013,13 +1012,13 @@ input[type=checkbox] {
         margin-left: 15px;
     }
 
-    .como_texto {
+    .how_text {
         width: 758px;
         height: 288px;
         margin-top: 140px;
     }
 
-    .texto_como {
+    .text_how {
         width: 290px;
         font-size: 14px;
         line-height: 180%;
@@ -1027,7 +1026,7 @@ input[type=checkbox] {
         margin-top: 0px;
     }
 
-    .botao_1 {
+    .button_one {
         width: 137px;
         height: 44px;
         cursor: pointer;
@@ -1035,21 +1034,21 @@ input[type=checkbox] {
         margin-bottom: 16px;
     }
 
-    .botao_2 {
+    .button_two {
         width: 137px;
         height: 44px;
         margin-left: 8px;
         cursor: pointer;
     }
 
-    .img_como {
+    .img_how {
         width: 290px;
         height: 140px;
         margin-left: 0px;
         position: absolute;
     }
     /* Seção Vantagens */
-    .vantagens {
+    .advantages {
         width: 320px;
         height: 1500px;
     }
@@ -1099,9 +1098,9 @@ input[type=checkbox] {
     }
 
     /* Seção Serviços */
-    .servicos {
+    .services {
         width: 320px;
-        height: 1920px;
+        height: 1960px;
     }
 
         .servico1 {grid-area: servico1 }
@@ -1112,7 +1111,7 @@ input[type=checkbox] {
         .servico6 {grid-area: servico6 }
 
 
-    .servicos_container {
+    .services_container {
         width: 290px;
         display: grid;
         margin-left: 15px;
@@ -1129,46 +1128,46 @@ input[type=checkbox] {
         margin-top: 25px;
     }
 
-    .servicos_container_item1 {
+    .services_container_item1 {
         width: 290px;
         height: 267px;
     }
 
-    .servico_descricao1 {
+    .services_description_one {
         width: 260px;
         height: 50px;
         font-size: 14px;
         margin-top: 7px;
     }
 
-    .servicos_container_item {
+    .services_container_item {
         width: 290px;
         height: 310px;
     }
 
-    .servico_descricao {
+    .services_description {
         width: 260px;
         height: 100px;
         font-size: 14px;
         margin-top: 7px;
     }
 
-    .container_servicos {
+    .container_services {
         margin-top: 15px;
     }
     
-    .card__servico {
+    .card__services {
         width: 260px;
         height: 32px;
     }
 
-    .img_servico {
+    .img_services {
         width: 290px;
         height: 148px;
         border-radius: 12px;
     }
 
-    .servico {
+    .service {
         width: 204px;
         height: 25px;
         font-size: 14px;
@@ -1195,10 +1194,10 @@ input[type=checkbox] {
         padding: 0px 15px;
     }
 
-    .informacoes {
+    .information {
         width: 140px;
         height: 318px;
-        margin-top: 855px;
+        margin-top: 865px;
     }
 
     .logo_footer {
@@ -1206,26 +1205,26 @@ input[type=checkbox] {
         height: 58px;
     }
 
-    .institucional, .link {
+    .institutional, .link {
         width: 144px;
         height: 182px;
         margin-top: 0px;
         font-size: 14px;
     }
 
-    .social-icones {
+    .social-icon {
         margin-top: 32px;
         gap: 24px;
         width: 104px;
         height: 40px;
     }
 
-    .icone {
+    .icon {
         width: 40px;
         height: 40px;
     }
 
-    .enviar {
+    .send {
         position: absolute;
         width: 290px;
         height: 432px;
@@ -1233,7 +1232,7 @@ input[type=checkbox] {
         margin-top: 15px;
     }
 
-    .title_enviar {
+    .title_send {
         width: 290px;
         height: 76px;
         font-size: 32px;
@@ -1262,7 +1261,7 @@ input[type=checkbox] {
         padding-left: 11px;
     }
 
-    .botao-concluir {
+    .button_conclude {
         width: 290px;
         height: 44px;
         margin-top: 48px;
@@ -1270,12 +1269,12 @@ input[type=checkbox] {
         padding: 10px 13px;
     }
     
-    .botao-concluir-texto {
+    .button_conclude_text {
         font-size: 14px;
         color: var(--white);
     }
 
-    .concluir {
+    .conclude {
         width: 290px;
         height: 92px;
         flex-direction: column;
@@ -1303,11 +1302,11 @@ input[type=checkbox] {
         margin-top: 17px;
     }
 
-    .texto_footer {
+    .text_footer {
         position: absolute;
         width: 290px;
         height: 250px;
-        margin-top: 573px;
+        margin-top: 563px;
         font-size: 14px;
     }
 }
