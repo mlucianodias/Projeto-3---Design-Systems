@@ -160,13 +160,14 @@ header {
     padding: 50px 75px;
 }
 
-.title_about {
+.title1 {
     font-family: var(--alt-font);
     font-size: 48px;
     font-style: normal;
     font-weight: 400;
     line-height: 125%; /* 60px */
 }
+
 .about-text {
     width: 850px;
     font-family: open sans;
@@ -294,12 +295,25 @@ h3 {
 }
 
 /* Seção Como trabalhamos */
+.work {
+    height: 626px;
+}
+
 .container_how {
     width: 758px;
     height: 425px;
     display: flex;
     margin-top: 39px;
     margin-left: 75px;
+}
+
+.title2 {
+    font-family: var(--alt-font);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 60px */
+    padding: 50px 75px;
 }
 
 .how_text {
@@ -734,6 +748,13 @@ input[type=checkbox] {
 
     }
 
+    h6 {
+        font-size: 14px;
+        font-family: Open Sans;
+        width: 260px;
+        margin-top: 16px;
+    }
+
     header {
         width: 320px;
         height: 52px;
@@ -856,6 +877,7 @@ input[type=checkbox] {
         width: 159px;
         font-size: 32px;
         margin-left: 15px;
+        padding-top: 15px;
     }
 
     .about, .advantages {
@@ -872,9 +894,10 @@ input[type=checkbox] {
         padding: 15px 15px;
     }
 
-    .title_about {
+    .title1 {
         font-family: var(--alt-font);
         font-size: 32px;
+        padding: 0;
 
     }
     .about-text {
@@ -917,6 +940,7 @@ input[type=checkbox] {
     }
 
     .consultancy_img {
+        margin-left: 0;
         width: 58px;
         height: 64px;
     }
@@ -995,9 +1019,16 @@ input[type=checkbox] {
     }
 
     /* Seção Como trabalhamos */
-    .Work {
+    .work {
         width: 385px;
-        height: 775px;
+        height: 770px;
+    }
+
+    .title2 {
+        font-family: var(--alt-font);
+        font-size: 32px;
+        padding: 15px;
+
     }
 
     br {
@@ -1041,16 +1072,20 @@ input[type=checkbox] {
         cursor: pointer;
     }
 
+    .img-how {
+        position: absolute;
+        margin-top: -16px;
+    }
+
     .img_how {
         width: 290px;
         height: 140px;
-        margin-left: 0px;
-        position: absolute;
+        margin-left: 0px;        position: absolute;
     }
     /* Seção Vantagens */
     .advantages {
         width: 320px;
-        height: 1500px;
+        height: 1460px;
     }
         .globo {grid-area: globo }
         .prancheta {grid-area: prancheta }
@@ -1100,7 +1135,7 @@ input[type=checkbox] {
     /* Seção Serviços */
     .services {
         width: 320px;
-        height: 1960px;
+        height: 1930px;
     }
 
         .servico1 {grid-area: servico1 }
