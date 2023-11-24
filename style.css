@@ -83,6 +83,27 @@ header {
 }
 
 /* Seção Projetos de alta complexidade */
+.banner {
+    animation: hideMe 5s 1;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@keyframes hideMe {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
 .title-projects {
     margin-top: 150px; /*margem superior em relação á imagem*/
     margin-left: 155px; /*margem lateral em relação á imagem*/
@@ -119,9 +140,25 @@ header {
     padding: 10px;
     cursor: pointer;
     margin-top: 64px;
-  }
+    animation: buttonColor 2s infinite;
+}
+
+@keyframes buttonColor {
+    0% {
+      background-color: #845EF7;
+      border: #845EF7;
+    }
+    50% {
+        background-color: #6e41f5;
+        border: #6e41f5;
+    }
+    100% {
+        background-color: #190063;
+        border: #190063;
+    }
+}
   
-  .button-calculation-text {
+.button-calculation-text {
     font-family: var(--alt-font);
     font-size: 18px;
     font-weight: 700;
@@ -246,6 +283,11 @@ h3 {
     border-radius: 32px;
     margin-top: 513px;
     border: 1px solid var(--border-sobre);
+    transition: all 1s; 
+    &:hover {
+        transform: scale(1.05);
+    }
+
 }
 
 .more_img {
@@ -286,12 +328,30 @@ h3 {
     cursor: pointer;
     margin-left: 660px;
 }
-  
+
 .button-more-text {
     font-family: var(--alt-font);
+    position:relative;
     font-size: 18px;
     font-weight: 700;
     color: var(--button);
+}
+
+.button-more:hover, .button_two:hover {
+    background: #845EF7;
+}
+
+.button-more-text:hover, .button_two-text:hover {
+    color: var(--white);
+}
+
+.button_conclude:hover, .button_one:hover {
+    background: #ffffff;
+    border: 2px solid var(--blue);
+}
+
+.button_conclude_text:hover, .button_one-text:hover {
+    color: var(--blue);
 }
 
 /* Seção Como trabalhamos */
@@ -416,6 +476,11 @@ h3 {
     padding: 40px;
     border-radius: 32px;
     border: 1px solid var(--border-sobre);
+    transition: all 1s; 
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 0px 10px 0px;
+    }
 }
 
 .cards__item img {
@@ -465,7 +530,23 @@ h3 {
     align-items: center;
     margin-bottom: 5px;
     border-radius: 8px;
+} 
+
+.container_card {
+    width: 573px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0px 0px 8px 8px;
     background-color: var(--sobre-vantagens);
+}
+
+.container_card {
+    transition: all 1s; 
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 
 .services_description_one {
@@ -483,14 +564,13 @@ h3 {
 
 .services_container_item {
     width: 573px;
-    height: 330px;
+    height: 360px;
     background-color: var(--white);
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 5px;
     border-radius: 8px;
-    background-color: var(--sobre-vantagens);
 }
 
 .services_description {
@@ -537,8 +617,14 @@ h3 {
 .arrow {
     width: 30px;
     height: 30px;
+    transition: all 1s;
+    &:hover {
+        transform: scale(1.0);
+        box-shadow: 0px 0px 10px 0px;
+    }
 }
 
+/* Seção Footer */
 .footer_item {
     background-color: var(--black);
     width: 1920px;
@@ -565,21 +651,26 @@ h3 {
     height: 58px;
 }
 
-.institutional, .link {
+.institutional {
     width: 180px;
     height: 182px;
     margin-top: 24px;
+}
+
+li {  
     font-family: var(--alt-font);
     font-size: 17px;
     font-style: normal;
     font-weight: 700;
     line-height: 38px;
     color: var(--white);
-
+    cursor: pointer;
+    border: 3px white;
 }
 
-.link1 {
-    color: var(--button);
+li:hover {
+    color: var(--blue);
+    text-decoration: underline var(--blue);
 }
 
 ul {
@@ -634,18 +725,37 @@ input {
 }
 
 .form-control { /*transformação */
-    transition: 2s all;
 
     &:focus {
-        box-shadow: 0px 0px 10px 0px lightblue;
+        box-shadow: 0px 0px 10px 0px lightskyblue;
     }
     &:invalid {
-        box-shadow: 0px 0px 10px 0px lightcoral;
-    }
+        box-shadow: 0px 0px 10px 0px red;
+        animation: pulse 2s infinite;
+    } 
     &:valid {
         box-shadow: 0px 0px 10px 0px lightgreen;
     }
 }
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+	}
+
+	70% {
+		box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+	}
+
+	100% {
+		box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+	}
+}
+
+.icon:hover {
+    filter: invert(70%);
+}
+
 
 ::placeholder  {
     font-family: Open Sans;
@@ -763,12 +873,8 @@ input[type=checkbox] {
         margin-top: 16px;
     }
 
-    body {
-        width: 320px;
-    }
-
     header {
-        width: 380px;
+        width: 320px;
         height: 52px;
     }
 
@@ -779,7 +885,7 @@ input[type=checkbox] {
     
     .logo {
         width: 52px;
-        margin-left: 145px;
+        margin-left: 125px;
     }
 
     .search {
@@ -841,9 +947,29 @@ input[type=checkbox] {
     }
 
     /* Seção Projetos de alta complexidade */
+    .banner {
+        animation: hideMe 5s 1;
+        animation-fill-mode: forwards;
+        animation-delay: 2s;
+    }
+    
+    @keyframes hideMe {
+        0% {
+          opacity: 1;
+        }
+        25% {
+          opacity: 0;
+        }
+        75% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
     .projects {
         position:-ms-page;
-        width: 380px;
+        width: 320px;
         height: 308px;
         margin-top: 15px;
     }
@@ -865,7 +991,7 @@ input[type=checkbox] {
         height: 100px;
     }
     .img_project {
-        width: 350px;
+        width: 290px;
         height: 308px;
         padding: 0;
         margin-left: 15px;
@@ -898,7 +1024,7 @@ input[type=checkbox] {
     }
 
     .about {
-        width: 380px;
+        width: 320px;
         height: 1430px;
         display: flex;
         flex-direction: column;
@@ -913,9 +1039,9 @@ input[type=checkbox] {
 
     }
     .about-text {
-        width: 350px;
+        width: 290px;
         font-size: 14px;
-        line-height: 180%;
+        line-height: 180%; /* 25.2px */
         letter-spacing: 0.14px;
         margin-top: 0px;
     }
@@ -983,15 +1109,14 @@ input[type=checkbox] {
     }
 
     .more {
-        width: 350px;
+        width: 290px;
         height: 380px;
-        margin-top: 370px;
+        margin-top: 450px;
         position: absolute;
-        border: 1px solid red;
     }
 
     .container_more {
-        width: 350px;
+        width: 290px;
         height: 225px;
         margin-top: 153px;
         padding: 16px 15px;
@@ -999,7 +1124,7 @@ input[type=checkbox] {
     }
 
     .more_img {
-        width: 350px;
+        width: 290px;
         height: 200px;
     }
 
@@ -1183,6 +1308,23 @@ input[type=checkbox] {
         height: 267px;
     }
 
+    .container_card {
+        width: 290px;
+        height: 220px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0px 0px 8px 8px;
+        background-color: var(--sobre-vantagens);
+    }
+    
+    .container_card {
+        transition: all 1s; 
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
     .services_description_one {
         width: 260px;
         height: 50px;
@@ -1248,10 +1390,10 @@ input[type=checkbox] {
         height: 58px;
     }
 
-    .institutional, .link {
-        width: 144px;
+    .institutional {
+        width: 180px;
         height: 182px;
-        margin-top: 0px;
+        margin-top: 12px;
         font-size: 14px;
     }
 
