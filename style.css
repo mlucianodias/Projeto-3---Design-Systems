@@ -84,10 +84,32 @@ header {
 
 /* Seção Projetos de alta complexidade */
 .banner {
+    width: 1770px;
+    height: 620px;
     animation: hideMe 5s 1;
     animation-fill-mode: forwards;
     animation-delay: 2s;
+    margin-left: 75px;   
+    padding-top: 50px;
+    border-radius: 24px;
 }
+
+.parallax {
+    margin-top: 50px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: 57%;
+    background-position-y: 37%;
+    background-image: url('./assets/complexidade/project1.jpg');
+}
+
+/* .img_project {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    margin-left: 75px;
+    padding-top: 50px;
+} */
 
 @keyframes hideMe {
     0% {
@@ -105,8 +127,8 @@ header {
   }
 
 .title-projects {
-    margin-top: 150px; /*margem superior em relação á imagem*/
-    margin-left: 155px; /*margem lateral em relação á imagem*/
+    margin-top: 40px; /*margem superior em relação á imagem*/
+    margin-left: 80px; /*margem lateral em relação á imagem*/
     position: absolute;
     font-family: var(--alt-font);
     font-size: 72px;
@@ -116,9 +138,9 @@ header {
     height: 172px;
 }
 .projects__item__text {
-    padding-top: 48px;
-    margin-top: 296px; 
-    margin-left: 155px;
+    padding-top: 30px;
+    margin-top: 206px; 
+    margin-left: 80px;
     position: absolute;
     font-size: 24px;
     width: 680px;
@@ -165,14 +187,6 @@ header {
     color: var(--white);
 }
 
-.img_project {
-    max-width: 100%;
-    object-fit: cover;
-    object-position: bottom;
-    margin-left: 75px;
-    padding-top: 50px;
-}
-
 /* Seção Sobre nós */
 .title {
     font-family: var(--alt-font);
@@ -187,14 +201,31 @@ header {
 .about, .advantages {
     background-color: var(--sobre-vantagens);
     margin-top: 60px;
+    height: 950px;
 }
 
 .about {
     width: 100%;
+    /*height: 600px;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 50px 75px;
+}
+
+.banner-tab {
+    margin-top: 212px;
+}
+
+.show {
+    width: 106px;
+    height: 58px;
+    border: 1px solid var(--button);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    background: #845EF7;
+    color: var(--white);
 }
 
 .title1 {
@@ -203,6 +234,7 @@ header {
     font-style: normal;
     font-weight: 400;
     line-height: 125%; /* 60px */
+
 }
 
 .about-text {
@@ -345,14 +377,14 @@ h3 {
     color: var(--white);
 }
 
-.button_conclude:hover, .button_one:hover {
+/* .button_conclude:hover, .button_one:hover {
     background: #ffffff;
     border: 2px solid var(--blue);
 }
 
 .button_conclude_text:hover, .button_one-text:hover {
     color: var(--blue);
-}
+} */
 
 /* Seção Como trabalhamos */
 .work {
@@ -878,6 +910,7 @@ input[type=checkbox] {
         height: 52px;
     }
 
+
     .navbar {
         height: 5px;
         display: flex;
@@ -948,9 +981,23 @@ input[type=checkbox] {
 
     /* Seção Projetos de alta complexidade */
     .banner {
+        width: 290px;
+        height: 308px;
         animation: hideMe 5s 1;
         animation-fill-mode: forwards;
         animation-delay: 2s;
+        margin-left: 15px;   
+        padding-top: 15px;
+        border-radius: 24px;
+    }
+    
+    .parallax {
+        margin-top: 20px;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position-x: 57%;
+        background-position-y: 37%;
+        background-image: url('./assets/complexidade/project1.jpg');
     }
     
     @keyframes hideMe {
@@ -975,8 +1022,8 @@ input[type=checkbox] {
     }
     
     .title-projects {
-        margin-top: 20px;
-        margin-left: 30px;
+        margin-top: 5px;
+        margin-left: 17px;
         font-size: 24px;
         width: 260px;
         height: 58px;
@@ -986,7 +1033,7 @@ input[type=checkbox] {
         padding-top: 1px;
         margin-top: 86px;
         font-size: 14px;
-        margin-left: 30px;
+        margin-left: 17px;
         width: 201px;
         height: 100px;
     }
@@ -1010,6 +1057,22 @@ input[type=checkbox] {
     }
 
     /* Seção Sobre nós */
+    
+    .banner-tab {
+        margin-top: 5px;
+    }
+    
+    .show {
+        width: 80px;
+        height: 40px;
+        border: 1px solid var(--button);
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 12px;
+        background: #845EF7;
+        color: var(--white);
+    }
+    
     .title {
         font-family: var(--alt-font);
         width: 159px;
@@ -1025,7 +1088,7 @@ input[type=checkbox] {
 
     .about {
         width: 320px;
-        height: 1430px;
+        height: 950px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -1034,6 +1097,7 @@ input[type=checkbox] {
 
     .title1 {
         font-family: var(--alt-font);
+        margin-top: 10px;
         font-size: 32px;
         padding: 0;
 
@@ -1047,11 +1111,11 @@ input[type=checkbox] {
     }
 
     .consultancy {
-        margin-top: 400px;
+        margin-top: 100px;
     }
 
     .architect {
-        margin-top: 16px;
+        margin-top: 100px;
     }
 
     .consultancy, .architect {
@@ -1111,7 +1175,7 @@ input[type=checkbox] {
     .more {
         width: 290px;
         height: 380px;
-        margin-top: 450px;
+        margin-top: 530px;
         position: absolute;
     }
 
@@ -1271,6 +1335,50 @@ input[type=checkbox] {
         width: 264px;
         font-size: 14px;
     }
+
+    .modal-container {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.5); /*opacidade aplicada na tela qdo o modal esta aberto*/;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    font-family: Poppins;
+    width: 50%;
+    height: 200px;
+    max-width: 500px;
+    background-color: white;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 24px;
+}
+
+.modal-content {
+    font-size: 24px;
+    text-align: center;
+}
+
+.button_one-text, .modal button {
+    font-size: medium;
+    font-weight: 700;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(97, 97, 255);
+    color: white;
+    cursor: pointer;
+}
+
+.modal-active {
+    display: flex;
+}
 
     /* Seção Serviços */
     .services {
