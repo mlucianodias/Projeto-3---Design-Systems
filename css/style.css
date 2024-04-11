@@ -1074,8 +1074,8 @@ input[type=checkbox] {
         border-radius: 8px;
         cursor: pointer;
         font-size: 12px;
-        background: #845EF7;
-        color: var(--white);
+        background: var(--white);
+        color: #845ef7;
     }
     
     .title {
@@ -1277,6 +1277,10 @@ input[type=checkbox] {
         height: 44px;
         margin-left: 8px;
         cursor: pointer;
+    }
+
+    .button_two-text {
+        font-size: 14px;
     }
 
     .img-how {
