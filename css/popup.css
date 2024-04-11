@@ -33,7 +33,7 @@
     padding: 12px;
     border: none;
     border-radius: 8px;
-    background-color: rgb(97, 97, 255);
+    background-color: var(--button);
     color: white;
     cursor: pointer;
 }
@@ -79,7 +79,7 @@
         padding: 12px;
         border: none;
         border-radius: 8px;
-        background-color: rgb(97, 97, 255);
+        background-color: var(--button);
         color: white;
         cursor: pointer;
     }

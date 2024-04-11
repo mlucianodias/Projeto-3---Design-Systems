@@ -100,7 +100,7 @@ header {
     background-attachment: fixed;
     background-position-x: 57%;
     background-position-y: 37%;
-    background-image: url('./assets/complexidade/project1.jpg');
+    background-image: url('../assets/complexidade/project1.jpg');
 }
 
 /* .img_project {
@@ -224,8 +224,8 @@ header {
     border-radius: 8px;
     cursor: pointer;
     font-size: 18px;
-    background: #845EF7;
-    color: var(--white);
+    background: var(--white);
+    color: #845ef7;
 }
 
 .title1 {
@@ -369,11 +369,16 @@ h3 {
     color: var(--button);
 }
 
-.button-more:hover, .button_two:hover {
+.button-more:hover, .button_two:hover, .show:hover {
     background: #845EF7;
 }
 
-.button-more-text:hover, .button_two-text:hover {
+.button-more-text:hover, .button_two-text:hover, .show:hover {
+    color: var(--white);
+}
+
+.show:focus{ /*mantem a cor do botão e da fonte ao ser clicado*/
+    background: #5A27F2;
     color: var(--white);
 }
 
@@ -997,7 +1002,7 @@ input[type=checkbox] {
         background-attachment: fixed;
         background-position-x: 57%;
         background-position-y: 37%;
-        background-image: url('./assets/complexidade/project1.jpg');
+        background-image: url('../assets/complexidade/project1.jpg');
     }
     
     @keyframes hideMe {
