@@ -15,6 +15,7 @@
     --sobre-vantagens: #FAFAFA;
     --border-sobre: #D3D7DB;
     --enviar: #ADB5BD;
+    --navbar: #F8F5FF;
     --alt-font: 'montserrat', 'sans-serif';
 }
 
@@ -43,14 +44,23 @@ header {
 
 /* Navbar */
 .navbar {
+    width: 1920px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+}
+
+.button_navbar {
+    font-size: 18px;
+    font-family: var(--alt-font);
+    font-weight: 700;
+    width: Hug (134px)px;
+    height: 58px;
+    padding: 13px 12px 13px 12px;
     border-radius: 8px;
-    background-color: transparent;
-    gap: 16px;
-    font-size: 20px;
+    background: var(--navbar);
+    border: 1px solid var(--border-sobre);
 }
 
 .logo {
@@ -917,13 +927,17 @@ input[type=checkbox] {
 
 
     .navbar {
-        height: 5px;
+        width: 300px;
+        height: 15px;
+        margin-top: 10px;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     
     .logo {
         width: 52px;
-        margin-left: 125px;
+        margin-left: 140px;
     }
 
     .search {
@@ -935,16 +949,31 @@ input[type=checkbox] {
       display: none;
       flex-direction: column;
       position: absolute;
-      top: 60px;
+      top: 79px;
       left: 15px;
       background-color: var(--white);
       width: 320px;
       z-index: 1;
-    } 
+    }
   
+    .button_navbar {
+        font-size: 18px;
+        font-family: var(--alt-font);
+        font-weight: 700;
+        width: Hug (91px)px;
+        height: Hug (44px)px;
+        padding: 13px 12px 13px 12px;
+        border-radius: 8px;
+        background: var(--white);
+        border: 1px solid var(--border-sobre);
+    }
+
     .nav-list.active {
       display: flex;
       position: absolute;
+      border-radius: 0px 0px 16px 16px;
+      width: 302px;
+      height: 330px;
     }
   
     .nav-list li {
@@ -953,6 +982,7 @@ input[type=checkbox] {
     }
   
     .burger-menu {
+      margin-left: 15px;
       position: absolute;  
       display: block;
       cursor: pointer;
@@ -967,7 +997,7 @@ input[type=checkbox] {
 
     /* Botão de fechar em forma de X */
     #burgerMenu.active .burger-line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(51deg) translate(6px, 4px);
     }
 
     #burgerMenu.active .burger-line:nth-child(2) {
@@ -975,13 +1005,13 @@ input[type=checkbox] {
     }
 
     #burgerMenu.active .burger-line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-51deg) translate(7px, -5px);
     }
 
     /* Empurra o conteúdo principal para baixo ao abrir o burger menu */
     .content.active {
-    transform: translateY(220px); /* Ajuste a altura conforme necessário */
-    transition: transform 0.3s ease-in-out;
+    transform: translateY(360px); /* Ajuste a altura conforme necessário */
+    transition: transform 0.5s ease-in-out;
     }
 
     /* Seção Projetos de alta complexidade */
