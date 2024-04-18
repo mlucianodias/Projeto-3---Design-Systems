@@ -966,6 +966,7 @@ input[type=checkbox] {
         border-radius: 8px;
         background: var(--white);
         border: 1px solid var(--border-sobre);
+        margin-bottom: 16px;
     }
 
     .nav-list.active {
@@ -973,7 +974,7 @@ input[type=checkbox] {
       position: absolute;
       border-radius: 0px 0px 16px 16px;
       width: 302px;
-      height: 330px;
+      height: 450px;
     }
   
     .nav-list li {
@@ -1010,7 +1011,7 @@ input[type=checkbox] {
 
     /* Empurra o conteúdo principal para baixo ao abrir o burger menu */
     .content.active {
-    transform: translateY(360px); /* Ajuste a altura conforme necessário */
+    transform: translateY(480px); /* Ajuste a altura conforme necessário */
     transition: transform 0.5s ease-in-out;
     }
 

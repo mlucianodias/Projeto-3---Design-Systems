@@ -10,7 +10,7 @@
 }
 
 .modal {
-    font-family: Poppins;
+    font: var(--all-font);
     width: 50%;
     height: 200px;
     max-width: 500px;
@@ -23,12 +23,14 @@
 }
 
 .modal-content {
-    font-size: 24px;
+    font-size: small;
+    font: var(--all-font);
     text-align: center;
 }
 
 .button_one-text, .modal button {
     font-size: medium;
+    font-family: var(--all-font);
     font-weight: 700;
     padding: 12px;
     border: none;
@@ -44,6 +46,7 @@
 
 @media  screen and (max-width: 768px) {
     .modal-container {
+        font: var(--all-font);
         height: 100vh;
         width: 100vw;
         position: fixed;
@@ -55,7 +58,6 @@
     }
     
     .modal {
-        font-family: Poppins;
         width: 50%;
         height: 150px;
         max-width: 500px;
@@ -68,7 +70,8 @@
     }
     
     .modal-content {
-        font-size: small;
+        font: var(--all-font);
+        font-size: 12px;
         text-align: center;
     }
     
